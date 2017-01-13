@@ -1,0 +1,30 @@
+{
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": 0,
+        "no-inner-declarations": 0,
+        "no-sparse-arrays": 0,
+        "no-unexpected-multiline": 0,
+        "no-unsafe-finally": 0
+    }
+}
