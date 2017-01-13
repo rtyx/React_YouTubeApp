@@ -37,11 +37,13 @@ class App extends Component { // eslint-disable-line no-unused-vars
         return (
             <div>
                 <SearchBar handleNewTerm={videoSearch}/>
-                <VideoDetail video={this.state.selectedVideo}/>
-                <VideoList
-                    handleVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
-                    videos={this.state.videos}
-                />
+                <div className="row">
+                    <VideoDetail video={this.state.selectedVideo}/>
+                    <VideoList
+                        handleVideoSelect={(selectedVideo) => this.setState({ selectedVideo })}
+                        videos={this.state.videos}
+                    />
+                </div>
             </div>
         );
     }
